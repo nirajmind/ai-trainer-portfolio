@@ -14,16 +14,20 @@ function App() {
   const projectsRef = useRef(null);
   const demoRef = useRef(null);
   const contactRef = useRef(null);
+  const servicesRef = useRef(null);
+  const instructorsRef = useRef(null);
   const [showModal, setShowModal] = useState(false);
 
   const scrollTo = (section) => {
     const map = {
       home: homeRef,
-      courses: coursesRef,
+      services: servicesRef,
+      instructors: instructorsRef,
       projects: projectsRef,
       demo: demoRef,
       contact: contactRef
     };
+
     const ref = map[section];
     if (ref && ref.current) {
       ref.current.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -48,6 +52,14 @@ function App() {
       <div ref={contactRef}>
         <Contact />
       </div>
+      <div ref={servicesRef}>
+        <Services />
+      </div>
+
+      <div ref={instructorsRef}>
+        <Instructors />
+      </div>
+
       <Footer />
       {showModal && <BookDemoModal onClose={() => setShowModal(false)} />}
     </div>

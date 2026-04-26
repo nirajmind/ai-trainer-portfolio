@@ -27,16 +27,17 @@ const Hero = ({ onBookDemo }) => {
         </div>
       </div>
       <div className="hero-right">
-        <h3>Trainer Profile</h3>
+        <h3>About Our Company</h3>
         <p>
-          I help teams and individuals move from GenAI curiosity to production-grade AI systems —
-          with a focus on RAG, agents, and secure, cloud-native delivery.
+          Open Trade Technologies is an AI/ML and GenAI engineering company delivering
+          enterprise-grade training, automation agents, and AI strategy for modern teams.
         </p>
+
         <div className="hero-meta">
-          <span>17+ years engineering</span>
-          <span>Cloud: GCP • Azure • AWS</span>
-          <span>GenAI: Claude • OpenAI • LangGraph</span>
-          <span>Domains: BFSI • Trading • Platforms</span>
+          <span>AI/ML Training</span>
+          <span>GenAI Engineering</span>
+          <span>RAG & Agents</span>
+          <span>Enterprise AI Strategy</span>
         </div>
       </div>
     </section>

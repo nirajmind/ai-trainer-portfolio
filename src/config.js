@@ -56,3 +56,10 @@ export const contact = {
 export const demo = {
   url: "https://your-streamlit-app-url.streamlit.app"
 };
+
+export const company = {
+  name: "Open Trade Technologies",
+  tagline: "AI Training • GenAI Engineering • Enterprise AI Solutions",
+  mission:
+    "We help companies adopt AI responsibly and effectively through training, engineering, and strategy."
+};

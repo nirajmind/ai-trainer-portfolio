@@ -8,25 +8,15 @@ const Navbar = ({ onNavClick, onBookDemo }) => {
           NIRAJ • <span style={{ color: "var(--accent)" }}>GENAI</span>
         </div>
         <div className="nav-links">
-          <span className="nav-link" onClick={() => onNavClick("home")}>
-            Home
-          </span>
-          <span className="nav-link" onClick={() => onNavClick("courses")}>
-            Courses
-          </span>
-          <span className="nav-link" onClick={() => onNavClick("projects")}>
-            Projects
-          </span>
-          <span className="nav-link" onClick={() => onNavClick("demo")}>
-            Demo
-          </span>
-          <span className="nav-link" onClick={() => onNavClick("contact")}>
-            Contact
-          </span>
-          <button className="btn btn-primary" onClick={onBookDemo}>
-            Book a Demo
-          </button>
+          <span className="nav-link" onClick={() => onNavClick("home")}>Home</span>
+          <span className="nav-link" onClick={() => onNavClick("services")}>Services</span>
+          <span className="nav-link" onClick={() => onNavClick("instructors")}>Instructors</span>
+          <span className="nav-link" onClick={() => onNavClick("projects")}>Projects</span>
+          <span className="nav-link" onClick={() => onNavClick("demo")}>Demo</span>
+          <span className="nav-link" onClick={() => onNavClick("contact")}>Contact</span>
+          <button className="btn btn-primary" onClick={onBookDemo}>Book a Demo</button>
         </div>
+
       </div>
     </div>
   );
