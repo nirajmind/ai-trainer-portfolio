@@ -1,43 +1,37 @@
 import React from "react";
-import { hero } from "../config";
-import { FaBolt } from "react-icons/fa";
+import "../styles/Hero.css";
 
 const Hero = ({ onBookDemo }) => {
   return (
-    <section id="home" className="hero">
-      <div>
-        <div className="hero-badge">
-          <FaBolt size={14} />
-          AI/ML Trainer • GenAI Engineer • AI Architect
-        </div>
+    <section id="home" className="hero-section">
+      <div className="hero-overlay" />
+
+      <div className="hero-content">
         <h1 className="hero-title">
-          <span className="hero-highlight">{hero.name}</span>
+          <span className="glow">Open Trade Technologies</span>
         </h1>
-        <p className="hero-tagline">{hero.title}</p>
-        <p style={{ whiteSpace: "pre-line", fontSize: "0.95rem", color: "var(--muted)" }}>
-          {hero.description}
+
+        <p className="hero-tagline">
+          AI Training • GenAI Engineering • Enterprise AI Solutions
         </p>
-        <div style={{ marginTop: 20, display: "flex", gap: 12 }}>
-          <button className="btn btn-primary" onClick={onBookDemo}>
-            {hero.cta}
-          </button>
-          <a href="#projects" className="btn">
-            View Projects
-          </a>
-        </div>
-      </div>
-      <div className="hero-right">
-        <h3>About Our Company</h3>
-        <p>
-          Open Trade Technologies is an AI/ML and GenAI engineering company delivering
-          enterprise-grade training, automation agents, and AI strategy for modern teams.
+
+        <p className="hero-description">
+          We help companies adopt AI responsibly and effectively through
+          hands‑on engineering, structured learning programs, and
+          production‑ready GenAI systems.  
+          <br />
+          From RAG pipelines to agentic workflows — we build the future with you.
         </p>
+
+        <button className="hero-cta" onClick={onBookDemo}>
+          Book a Demo →
+        </button>
 
         <div className="hero-meta">
           <span>AI/ML Training</span>
           <span>GenAI Engineering</span>
-          <span>RAG & Agents</span>
-          <span>Enterprise AI Strategy</span>
+          <span>RAG & Vector Search</span>
+          <span>Agentic Systems</span>
         </div>
       </div>
     </section>

@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import BookDemoModal from "./components/BookDemoModal";
 import Services from "./components/Services";
 import Instructors from "./components/Instructors";
+import LeadInstructor from "./components/LeadInstructor";
 
 function App() {
   const homeRef = useRef(null);
@@ -18,7 +19,11 @@ function App() {
   const contactRef = useRef(null);
   const servicesRef = useRef(null);
   const instructorsRef = useRef(null);
+
   const [showModal, setShowModal] = useState(false);
+
+  // FIX: define openModal
+  const openModal = () => setShowModal(true);
 
   const scrollTo = (section) => {
     const map = {
@@ -38,34 +43,46 @@ function App() {
 
   return (
     <div className="app-root">
-      <Navbar onNavClick={scrollTo} onBookDemo={() => setShowModal(true)} />
+      <Navbar onNavClick={scrollTo} onBookDemo={openModal} />
+
       <div ref={homeRef}>
-        <Hero onBookDemo={() => setShowModal(true)} />
+        <Hero onBookDemo={openModal} />
       </div>
-      <div ref={coursesRef}>
-        <Courses />
-      </div>
-      <div ref={projectsRef}>
-        <Projects />
-      </div>
-      <div ref={demoRef}>
-        <Demo />
-      </div>
-      <div ref={contactRef}>
-        <Contact />
-      </div>
+
       <div ref={servicesRef}>
         <Services />
       </div>
+
+      <LeadInstructor />
 
       <div ref={instructorsRef}>
         <Instructors />
       </div>
 
+      <div ref={coursesRef}>
+        <Courses />
+      </div>
+
+      <div ref={projectsRef}>
+        <Projects />
+      </div>
+
+      <div ref={demoRef}>
+        <Demo />
+      </div>
+
+      <div ref={contactRef}>
+        <Contact />
+      </div>
+
       <Footer />
+
+
       {showModal && <BookDemoModal onClose={() => setShowModal(false)} />}
     </div>
   );
 }
 
 export default App;
+
+console.log("App.js loaded");
