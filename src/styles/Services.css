@@ -1,0 +1,58 @@
+.service-desc {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+/* --- CLOUD COMPARISON SECTION --- */
+
+.cloud-compare-section {
+  margin-top: 60px;
+  padding: 40px;
+  background: rgba(0, 20, 30, 0.4);
+  border-radius: 16px;
+  border: 1px solid rgba(0, 234, 255, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.cloud-compare-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #e8f7ff;
+  margin-bottom: 10px;
+}
+
+.cloud-compare-subtitle {
+  color: #b8dfff;
+  margin-bottom: 30px;
+  font-size: 1rem;
+}
+
+.cloud-table-wrapper {
+  overflow-x: auto;
+}
+
+.cloud-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.cloud-table th,
+.cloud-table td {
+  padding: 14px 18px;
+  border-bottom: 1px solid rgba(0, 234, 255, 0.15);
+  color: #d8e6ef;
+  text-align: left;
+}
+
+.cloud-table th {
+  color: #00eaff;
+  font-weight: 600;
+}
+
+.cloud-note {
+  margin-top: 20px;
+  color: #9be7ff;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
