@@ -7,6 +7,8 @@ import Demo from "./components/Demo";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import BookDemoModal from "./components/BookDemoModal";
+import Services from "./components/Services";
+import Instructors from "./components/Instructors";
 
 function App() {
   const homeRef = useRef(null);
