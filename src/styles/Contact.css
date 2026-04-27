@@ -1,0 +1,91 @@
+.contact-section {
+  padding: 100px 20px;
+  background: #000;
+  text-align: center;
+}
+
+.contact-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #e8f7ff;
+  margin-bottom: 10px;
+}
+
+.contact-subtitle {
+  color: #9be7ff;
+  margin-bottom: 40px;
+  font-size: 1rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  padding: 30px;
+  border-radius: 16px;
+  background: rgba(0, 20, 30, 0.5);
+  border: 1px solid rgba(0, 234, 255, 0.2);
+  backdrop-filter: blur(8px);
+  text-align: left;
+}
+
+.primary-contact {
+  border-color: rgba(0, 234, 255, 0.5);
+  box-shadow: 0 0 20px rgba(0, 234, 255, 0.2);
+}
+
+.contact-heading {
+  font-size: 1.4rem;
+  color: #00eaff;
+  margin-bottom: 10px;
+}
+
+.contact-name {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #e8f7ff;
+}
+
+.contact-role {
+  color: #7ddfff;
+  margin-bottom: 20px;
+}
+
+.contact-item a {
+  color: #b8f3ff;
+  text-decoration: none;
+}
+
+.contact-item {
+  margin-bottom: 10px;
+  font-size: 0.95rem;
+}
+
+.contact-btn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background: linear-gradient(90deg, #00eaff, #007bff);
+  border: none;
+  border-radius: 8px;
+  color: #000;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00eaff;
+}
+
+.contact-note {
+  margin-top: 20px;
+  color: #9be7ff;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}

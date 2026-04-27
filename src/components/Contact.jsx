@@ -1,52 +1,59 @@
 import React from "react";
-import { contact } from "../config";
-import { FaWhatsapp, FaLinkedin } from "react-icons/fa";
+import "../styles/Contact.css";
 
 const Contact = () => {
   return (
-    <section id="contact" className="section">
-      <h2 className="section-title">Contact</h2>
-      <p className="section-subtitle">
-        Reach out for training, consulting, or GenAI architecture discussions.
+    <section id="contact" className="contact-section">
+      <h2 className="contact-title">Contact Us</h2>
+      <p className="contact-subtitle">
+        Reach out to our team for training, partnerships, or enterprise AI solutions.
       </p>
-      <div className="card-grid">
-        <div className="card">
-          <h3>Direct Contact</h3>
-          <p style={{ fontSize: "0.9rem", color: "var(--muted)" }}>
-            I’m available for remote and hybrid engagements, workshops, and custom AI/ML programs.
+
+      <div className="contact-grid">
+
+        {/* --- PRIMARY CONTACT: SALES TEAM --- */}
+        <div className="contact-card primary-contact">
+          <h3 className="contact-heading">Primary Contact — Sales Team</h3>
+
+          <p className="contact-name">Mr. Pariwesh Gupta</p>
+          <p className="contact-role">Sales & Partnerships</p>
+
+          <p className="contact-item">
+            📞 <a href="tel:+919140762809">+91 91407 62809</a>
           </p>
-          <p style={{ marginTop: 10 }}>
-            <strong>Email:</strong> <a href={`mailto:${contact.email}`}>{contact.email}</a>
+          <p className="contact-item">
+            ✉️ <a href="mailto:pariwesh.gupta@gmail.com">pariwesh.gupta@gmail.com</a>
           </p>
-          <p>
-            <strong>WhatsApp:</strong>{" "}
-            <a href={`https://wa.me/${contact.whatsapp.replace(/[^0-9]/g, "")}`} target="_blank" rel="noreferrer">
-              {contact.whatsapp}
+          <p className="contact-item">
+            💬 <a href="https://wa.me/919140762809" target="_blank" rel="noreferrer">
+              WhatsApp Sales Team
             </a>
           </p>
-          <p>
-            <strong>LinkedIn:</strong>{" "}
-            <a href={contact.linkedin} target="_blank" rel="noreferrer">
-              {contact.linkedin}
+
+          <button className="contact-btn">Talk to Sales →</button>
+        </div>
+
+        {/* --- SECONDARY CONTACT: TECHNICAL QUERIES --- */}
+        <div className="contact-card secondary-contact">
+          <h3 className="contact-heading">Secondary Contact — Technical Queries</h3>
+
+          <p className="contact-name">Niraj Kumar Adhikary</p>
+          <p className="contact-role">Lead Instructor & Technical Advisor</p>
+
+          <p className="contact-item">
+            ✉️ <a href="mailto:niky.sway@gmail.com">niky.sway@gmail.com</a>
+          </p>
+          <p className="contact-item">
+            🔗 <a href="https://www.linkedin.com/in/nirajadhikary" target="_blank" rel="noreferrer">
+              LinkedIn Profile
             </a>
+          </p>
+
+          <p className="contact-note">
+            For technical discussions, curriculum design, or enterprise AI architecture queries.
           </p>
         </div>
-        <div className="card">
-          <h3>Connect</h3>
-          <div style={{ display: "flex", gap: 12, marginTop: 10 }}>
-            <a
-              href={`https://wa.me/${contact.whatsapp.replace(/[^0-9]/g, "")}`}
-              target="_blank"
-              rel="noreferrer"
-              className="btn btn-primary"
-            >
-              <FaWhatsapp style={{ marginRight: 6 }} /> WhatsApp
-            </a>
-            <a href={contact.linkedin} target="_blank" rel="noreferrer" className="btn">
-              <FaLinkedin style={{ marginRight: 6 }} /> LinkedIn
-            </a>
-          </div>
-        </div>
+
       </div>
     </section>
   );
